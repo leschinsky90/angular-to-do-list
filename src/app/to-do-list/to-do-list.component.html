@@ -1,3 +1,6 @@
 <div>
-  <app-to-do-list-item *ngFor="let todoItem of todos"></app-to-do-list-item>
+  <app-to-do-list-item
+    *ngFor="let toDoListItem of todos"
+    [toDoListItem]="toDoListItem"
+  ></app-to-do-list-item>
 </div>
