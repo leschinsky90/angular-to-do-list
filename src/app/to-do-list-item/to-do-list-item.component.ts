@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { TodoListItem } from '../todo-list-item';
+import { ToDoListItem } from '../todo-list-item';
 
 @Component({
   selector: 'app-to-do-list-item',
@@ -9,5 +9,5 @@ import { TodoListItem } from '../todo-list-item';
   styleUrl: './to-do-list-item.component.css',
 })
 export class ToDoListItemComponent {
-  @Input() toDoListItem!: TodoListItem;
+  @Input() toDoListItem!: ToDoListItem;
 }

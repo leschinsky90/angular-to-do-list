@@ -1,4 +1,4 @@
-export interface TodoListItem {
+export interface ToDoListItem {
   title: string;
   completed: boolean;
 }
