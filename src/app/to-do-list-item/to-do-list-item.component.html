@@ -1,5 +1,8 @@
-<div>
-  <h1>{{ toDoListItem.title }}</h1>
+<div id="card">
+  <div id="container1">
+    <h1>{{ toDoListItem.title }}</h1>
+    <div id="statusSVG"></div>
+  </div>
   <p class="status">{{ toDoListItem.completed ? "Done" : "Active" }}</p>
   <button>Complete</button>
 </div>

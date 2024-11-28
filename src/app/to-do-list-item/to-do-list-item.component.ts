@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { TodoListItem } from '../todo-list-item';
 
 @Component({
   selector: 'app-to-do-list-item',
@@ -8,10 +9,5 @@ import { Component } from '@angular/core';
   styleUrl: './to-do-list-item.component.css',
 })
 export class ToDoListItemComponent {
-  toDoListItem = {
-    userId: 1,
-    id: 1,
-    title: 'hrfd sdkfgd gd',
-    completed: false,
-  };
+  @Input() todoListItem!: TodoListItem;
 }
