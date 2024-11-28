@@ -9,5 +9,5 @@ import { TodoListItem } from '../todo-list-item';
   styleUrl: './to-do-list-item.component.css',
 })
 export class ToDoListItemComponent {
-  @Input() todoListItem!: TodoListItem;
+  @Input() toDoListItem!: TodoListItem;
 }
