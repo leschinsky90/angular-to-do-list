@@ -1,8 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { NgFor } from '@angular/common';
-import { Title } from '@angular/platform-browser';
 import { ToDoListItemComponent } from '../to-do-list-item/to-do-list-item.component';
 import { IToDoList } from '../i-to-do-list';
+import { ToDoService } from '../to-do.service';
 
 @Component({
   selector: 'app-to-do-list',
@@ -13,10 +13,10 @@ import { IToDoList } from '../i-to-do-list';
 })
 export class ToDoListComponent {
   todos: IToDoList[] = [];
+
+  todoListService: ToDoService = inject(ToDoService);
+
   constructor() {
-    
+    this.todos = this.todoListService.getTodos();
   }
-  getTodos = () => {
-    console.log();
-  };
 }
