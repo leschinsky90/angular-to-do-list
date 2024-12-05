@@ -33,4 +33,11 @@ export class ToDoService {
     }
     return this.todos;
   };
+  findTitle = (searchTitle: string) => {
+    const findEls = [];
+    for (const el of this.todos) {
+      if (el.title === searchTitle) findEls.push(el);
+    }
+    return findEls;
+  };
 }
